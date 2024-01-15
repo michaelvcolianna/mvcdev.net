@@ -367,6 +367,7 @@ img.pull-left {
 	z-index: 800;
 	height: 100%;
 	width: 100%;
+	transition: opacity 300ms ease-in-out;
 }
 .no-js #preloader, .oldie #preloader {
 	display: none;
@@ -379,6 +380,10 @@ img.pull-left {
 	height: 60px;
 	margin: -30px 0 0 -30px;
 	padding: 0;
+	transition: opacity 300ms ease-in-out;
+}
+.gone {
+	opacity: 0;
 }
 #loader:before {
 	content: "";
@@ -614,7 +619,7 @@ header .logo a {
 	border: none;
 	width: 282px;
 	height: 72px;
-	background: url("../images/main-logo.png") no-repeat center;
+	background: url("/images/main-logo.png") no-repeat center;
 	background-size: 282px 72px;
 
 	font: 0/0 a;
@@ -883,7 +888,7 @@ header .logo a {
 
 /* static background */
 #main-404-content.main-content-static {
-	background-image: url(../images/slides/greens.jpg);
+	background-image: url(/images/slides/greens.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	-webkit-background-size: cover;
